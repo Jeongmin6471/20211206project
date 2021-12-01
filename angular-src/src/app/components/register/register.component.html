@@ -1,0 +1,53 @@
+<h2 class="page-header">사용자 등록 | Register</h2>
+
+<form (ngSubmit)="onRegisterSubmit()">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name</label>
+    <input 
+    type="text"
+    [(ngModel)]="name" 
+    [ngModelOptions]="{ standalone: true }" 
+    class="form-control" 
+    id="exampleInputEmail1"  
+    >
+  </div> 
+
+  <div class="form-group">
+    <label for="exampleInputEmail2">Email address</label>
+    <input type="email"
+    [(ngModel)]="email "
+    [ngModelOptions]="{ standalone: true }" 
+    class="form-control" 
+    id="exampleFormControlInput2" />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail3">ID</label>
+    <input type="text"
+    [(ngModel)]="username "
+    [ngModelOptions]="{ standalone: true }" 
+    class="form-control" 
+    id="exampleFormControlInput3" />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail4">Password</label>
+    <input type="password" 
+    [(ngModel)]="password1"
+    [ngModelOptions]="{ standalone: true }" 
+    class="form-control" 
+    id="exampleFormControlInput4" />
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail5">Password Check</label>
+    <input type="password"
+    [(ngModel)]="password2"
+    [ngModelOptions]="{ standalone: true }" 
+    class="form-control" 
+    id="exampleFormControlInput5" />
+  </div>
+  <br>
+  
+  <input type="submit" class="btn btn-primary" value="Submit" /> 
+</form>
